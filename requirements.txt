@@ -3,3 +3,4 @@ djongo
 pymongo
 gunicorn
 djangorestframework
+django-cors-headers
