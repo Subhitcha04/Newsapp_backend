@@ -1,0 +1,2250 @@
+Internal Server Error: /api/news/fetch-news/
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\cit\6th sem\cloudcat\news_backend\newsapp\views.py", line 55, in fetch_news
+    return JsonResponse({"news": NewsArticleSerializer.data})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\http\response.py", line 691, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\serializers\json.py", line 106, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type property is not JSON serializable
+"GET /api/news/fetch-news/ HTTP/1.1" 500 139546
+Internal Server Error: /api/news/fetch-news/
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\cit\6th sem\cloudcat\news_backend\newsapp\views.py", line 55, in fetch_news
+    return JsonResponse({"news": serializer.data})
+                                 ^^^^^^^^^^
+NameError: name 'serializer' is not defined
+"GET /api/news/fetch-news/ HTTP/1.1" 500 114155
+Internal Server Error: /api/news/fetch-news/
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\cit\6th sem\cloudcat\news_backend\newsapp\views.py", line 55, in fetch_news
+    return JsonResponse({"message": "News articles updated successfully!", "news": NewsArticleSerializer.data})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\http\response.py", line 691, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\serializers\json.py", line 106, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type property is not JSON serializable
+"GET /api/news/fetch-news/ HTTP/1.1" 500 139893
+Internal Server Error: /api/news/get-news/
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\cit\6th sem\cloudcat\news_backend\newsapp\views.py", line 75, in get_news
+    "pubDate": article.pubDate.strftime("%Y-%m-%d %H:%M:%S") if article.pubDate else None,
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'strftime'
+"GET /api/news/get-news/ HTTP/1.1" 500 102253
+Internal Server Error: /api/news/login/
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\cit\6th sem\cloudcat\news_backend\newsapp\views.py", line 102, in login_user
+    user = User.objects.filter(email=data['email']).first()
+                                     ~~~~^^^^^^^^^
+KeyError: 'email'
+"GET /api/news/login/ HTTP/1.1" 500 99076
+Internal Server Error: /api/news/login/
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\cit\6th sem\cloudcat\news_backend\newsapp\views.py", line 102, in login_user
+    user = User.objects.filter(email=data['email']).first()
+                                     ~~~~^^^^^^^^^
+KeyError: 'email'
+"GET /api/news/login/ HTTP/1.1" 500 99213
+Internal Server Error: /api/news/signup/
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\cit\6th sem\cloudcat\news_backend\newsapp\views.py", line 87, in register_user
+    if User.objects.filter(email=data['email']).exists():
+                                 ~~~~^^^^^^^^^
+KeyError: 'email'
+"GET /api/news/signup/ HTTP/1.1" 500 99280
+Internal Server Error: /api/news/signup/
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\cit\6th sem\cloudcat\news_backend\newsapp\views.py", line 87, in register_user
+    if User.objects.filter(email=data['email']).exists():
+                                 ~~~~^^^^^^^^^
+KeyError: 'email'
+"GET /api/news/signup/ HTTP/1.1" 500 99006
+Internal Server Error: /api/news/signup/
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 808, in __iter__
+    yield from iter(self._query)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 167, in __iter__
+    yield self._align_results(doc)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 269, in _align_results
+    if selected.table == self.left_table:
+       ^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 941 more times]
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 130, in table
+    name = self.given_table
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 141, in given_table
+    name = self._token.get_real_name()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 361, in get_real_name
+    return self._get_first_name(dot_idx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 386, in _get_first_name
+    return token.get_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 355, in get_name
+    return self.get_alias() or self.get_real_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 339, in get_alias
+    kw_idx, kw = self.token_next_by(m=(T.Keyword, 'AS'))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 244, in token_next_by
+    return self._token_matching(funcs, idx, end)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 223, in _token_matching
+    if func(token):
+       ^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 242, in <lambda>
+    funcs = lambda tk: imt(tk, i, m, t)
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in imt
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in <genexpr>
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                           ^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 76, in fetchone
+    return self.result.next()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 797, in __next__
+    result = next(self._result_generator)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 830, in __iter__
+    raise exe from e
+djongo.exceptions.SQLDecodeError: 
+
+	Keyword: FAILED SQL: SELECT %(0)s AS "a" FROM "newsapp_user" WHERE "newsapp_user"."email" = %(1)s LIMIT 1
+Params: (1, 'subhitcha.s@gmail.com')
+Version: 1.3.6
+	Sub SQL: None
+	FAILED SQL: None
+	Params: None
+	Version: None
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+djongo.database.DatabaseError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\cit\6th sem\cloudcat\news_backend\newsapp\views.py", line 91, in register_user
+    if User.objects.filter(email=data.get('email')).exists():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1226, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\query.py", line 592, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1366, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1409, in execute_sql
+    val = cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+django.db.utils.DatabaseError
+"POST /api/news/signup/ HTTP/1.1" 500 3817207
+Internal Server Error: /api/news/signup/
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 808, in __iter__
+    yield from iter(self._query)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 167, in __iter__
+    yield self._align_results(doc)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 269, in _align_results
+    if selected.table == self.left_table:
+       ^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 941 more times]
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 130, in table
+    name = self.given_table
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 141, in given_table
+    name = self._token.get_real_name()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 361, in get_real_name
+    return self._get_first_name(dot_idx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 386, in _get_first_name
+    return token.get_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 355, in get_name
+    return self.get_alias() or self.get_real_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 339, in get_alias
+    kw_idx, kw = self.token_next_by(m=(T.Keyword, 'AS'))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 244, in token_next_by
+    return self._token_matching(funcs, idx, end)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 223, in _token_matching
+    if func(token):
+       ^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 242, in <lambda>
+    funcs = lambda tk: imt(tk, i, m, t)
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in imt
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in <genexpr>
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                           ^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 76, in fetchone
+    return self.result.next()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 797, in __next__
+    result = next(self._result_generator)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 830, in __iter__
+    raise exe from e
+djongo.exceptions.SQLDecodeError: 
+
+	Keyword: FAILED SQL: SELECT %(0)s AS "a" FROM "newsapp_user" WHERE "newsapp_user"."email" = %(1)s LIMIT 1
+Params: (1, 'subhitcha.s@gmail.com')
+Version: 1.3.6
+	Sub SQL: None
+	FAILED SQL: None
+	Params: None
+	Version: None
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+djongo.database.DatabaseError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\cit\6th sem\cloudcat\news_backend\newsapp\views.py", line 91, in register_user
+    if User.objects.filter(email=data.get('email')).exists():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1226, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\query.py", line 592, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1366, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1409, in execute_sql
+    val = cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+django.db.utils.DatabaseError
+"POST /api/news/signup/ HTTP/1.1" 500 3817207
+Internal Server Error: /api/news/signup/
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 808, in __iter__
+    yield from iter(self._query)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 167, in __iter__
+    yield self._align_results(doc)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 269, in _align_results
+    if selected.table == self.left_table:
+       ^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 941 more times]
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 130, in table
+    name = self.given_table
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 141, in given_table
+    name = self._token.get_real_name()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 361, in get_real_name
+    return self._get_first_name(dot_idx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 386, in _get_first_name
+    return token.get_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 355, in get_name
+    return self.get_alias() or self.get_real_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 339, in get_alias
+    kw_idx, kw = self.token_next_by(m=(T.Keyword, 'AS'))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 244, in token_next_by
+    return self._token_matching(funcs, idx, end)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 223, in _token_matching
+    if func(token):
+       ^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 242, in <lambda>
+    funcs = lambda tk: imt(tk, i, m, t)
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in imt
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in <genexpr>
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                           ^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 76, in fetchone
+    return self.result.next()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 797, in __next__
+    result = next(self._result_generator)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 830, in __iter__
+    raise exe from e
+djongo.exceptions.SQLDecodeError: 
+
+	Keyword: FAILED SQL: SELECT %(0)s AS "a" FROM "newsapp_user" WHERE "newsapp_user"."email" = %(1)s LIMIT 1
+Params: (1, 'subhitcha.s@gmail.com')
+Version: 1.3.6
+	Sub SQL: None
+	FAILED SQL: None
+	Params: None
+	Version: None
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+djongo.database.DatabaseError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\cit\6th sem\cloudcat\news_backend\newsapp\views.py", line 91, in register_user
+    if User.objects.filter(email=data.get('email')).exists():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1226, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\query.py", line 592, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1366, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1409, in execute_sql
+    val = cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+django.db.utils.DatabaseError
+"POST /api/news/signup/ HTTP/1.1" 500 3817207
+Internal Server Error: /api/news/signup/
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 808, in __iter__
+    yield from iter(self._query)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 167, in __iter__
+    yield self._align_results(doc)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 269, in _align_results
+    if selected.table == self.left_table:
+       ^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 941 more times]
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 130, in table
+    name = self.given_table
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 141, in given_table
+    name = self._token.get_real_name()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 361, in get_real_name
+    return self._get_first_name(dot_idx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 386, in _get_first_name
+    return token.get_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 355, in get_name
+    return self.get_alias() or self.get_real_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 339, in get_alias
+    kw_idx, kw = self.token_next_by(m=(T.Keyword, 'AS'))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 244, in token_next_by
+    return self._token_matching(funcs, idx, end)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 223, in _token_matching
+    if func(token):
+       ^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 242, in <lambda>
+    funcs = lambda tk: imt(tk, i, m, t)
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in imt
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in <genexpr>
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                           ^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 76, in fetchone
+    return self.result.next()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 797, in __next__
+    result = next(self._result_generator)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 830, in __iter__
+    raise exe from e
+djongo.exceptions.SQLDecodeError: 
+
+	Keyword: FAILED SQL: SELECT %(0)s AS "a" FROM "newsapp_user" WHERE "newsapp_user"."email" = %(1)s LIMIT 1
+Params: (1, 'subhitcha.s@gmail.com')
+Version: 1.3.6
+	Sub SQL: None
+	FAILED SQL: None
+	Params: None
+	Version: None
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+djongo.database.DatabaseError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\cit\6th sem\cloudcat\news_backend\newsapp\views.py", line 91, in register_user
+    if User.objects.filter(email=data.get('email')).exists():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1226, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\query.py", line 592, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1366, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1409, in execute_sql
+    val = cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+django.db.utils.DatabaseError
+"POST /api/news/signup/ HTTP/1.1" 500 3816902
+Internal Server Error: /api/news/signup/
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 808, in __iter__
+    yield from iter(self._query)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 167, in __iter__
+    yield self._align_results(doc)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 269, in _align_results
+    if selected.table == self.left_table:
+       ^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 941 more times]
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 130, in table
+    name = self.given_table
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 141, in given_table
+    name = self._token.get_real_name()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 361, in get_real_name
+    return self._get_first_name(dot_idx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 386, in _get_first_name
+    return token.get_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 355, in get_name
+    return self.get_alias() or self.get_real_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 339, in get_alias
+    kw_idx, kw = self.token_next_by(m=(T.Keyword, 'AS'))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 244, in token_next_by
+    return self._token_matching(funcs, idx, end)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 223, in _token_matching
+    if func(token):
+       ^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 242, in <lambda>
+    funcs = lambda tk: imt(tk, i, m, t)
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in imt
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in <genexpr>
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                           ^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 76, in fetchone
+    return self.result.next()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 797, in __next__
+    result = next(self._result_generator)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 830, in __iter__
+    raise exe from e
+djongo.exceptions.SQLDecodeError: 
+
+	Keyword: FAILED SQL: SELECT %(0)s AS "a" FROM "newsapp_user" WHERE "newsapp_user"."email" = %(1)s LIMIT 1
+Params: (1, 'subhitcha.s@gmail.com')
+Version: 1.3.6
+	Sub SQL: None
+	FAILED SQL: None
+	Params: None
+	Version: None
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+djongo.database.DatabaseError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\cit\6th sem\cloudcat\news_backend\newsapp\views.py", line 91, in register_user
+    if User.objects.filter(email=data.get('email')).exists():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1226, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\query.py", line 592, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1366, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1409, in execute_sql
+    val = cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+django.db.utils.DatabaseError
+"POST /api/news/signup/ HTTP/1.1" 500 3816902
+Internal Server Error: /api/news/signup/
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 808, in __iter__
+    yield from iter(self._query)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 167, in __iter__
+    yield self._align_results(doc)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 269, in _align_results
+    if selected.table == self.left_table:
+       ^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 941 more times]
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 130, in table
+    name = self.given_table
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 141, in given_table
+    name = self._token.get_real_name()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 361, in get_real_name
+    return self._get_first_name(dot_idx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 386, in _get_first_name
+    return token.get_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 355, in get_name
+    return self.get_alias() or self.get_real_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 339, in get_alias
+    kw_idx, kw = self.token_next_by(m=(T.Keyword, 'AS'))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 244, in token_next_by
+    return self._token_matching(funcs, idx, end)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 223, in _token_matching
+    if func(token):
+       ^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 242, in <lambda>
+    funcs = lambda tk: imt(tk, i, m, t)
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in imt
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in <genexpr>
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                           ^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 76, in fetchone
+    return self.result.next()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 797, in __next__
+    result = next(self._result_generator)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 830, in __iter__
+    raise exe from e
+djongo.exceptions.SQLDecodeError: 
+
+	Keyword: FAILED SQL: SELECT %(0)s AS "a" FROM "newsapp_user" WHERE "newsapp_user"."email" = %(1)s LIMIT 1
+Params: (1, 'subhitcha.s@gmail.com')
+Version: 1.3.6
+	Sub SQL: None
+	FAILED SQL: None
+	Params: None
+	Version: None
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+djongo.database.DatabaseError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\cit\6th sem\cloudcat\news_backend\newsapp\views.py", line 91, in register_user
+    if User.objects.filter(email=data.get('email')).exists():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1226, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\query.py", line 592, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1366, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1409, in execute_sql
+    val = cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+django.db.utils.DatabaseError
+"POST /api/news/signup/ HTTP/1.1" 500 3816902
+Internal Server Error: /api/news/signup/
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 808, in __iter__
+    yield from iter(self._query)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 167, in __iter__
+    yield self._align_results(doc)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 269, in _align_results
+    if selected.table == self.left_table:
+       ^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 941 more times]
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 130, in table
+    name = self.given_table
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 141, in given_table
+    name = self._token.get_real_name()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 361, in get_real_name
+    return self._get_first_name(dot_idx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 386, in _get_first_name
+    return token.get_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 355, in get_name
+    return self.get_alias() or self.get_real_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 339, in get_alias
+    kw_idx, kw = self.token_next_by(m=(T.Keyword, 'AS'))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 244, in token_next_by
+    return self._token_matching(funcs, idx, end)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 223, in _token_matching
+    if func(token):
+       ^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 242, in <lambda>
+    funcs = lambda tk: imt(tk, i, m, t)
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in imt
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in <genexpr>
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                           ^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 76, in fetchone
+    return self.result.next()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 797, in __next__
+    result = next(self._result_generator)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 830, in __iter__
+    raise exe from e
+djongo.exceptions.SQLDecodeError: 
+
+	Keyword: FAILED SQL: SELECT %(0)s AS "a" FROM "newsapp_user" WHERE "newsapp_user"."email" = %(1)s LIMIT 1
+Params: (1, 'subhitcha.s@gmail.com')
+Version: 1.3.6
+	Sub SQL: None
+	FAILED SQL: None
+	Params: None
+	Version: None
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+djongo.database.DatabaseError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\cit\6th sem\cloudcat\news_backend\newsapp\views.py", line 91, in register_user
+    if User.objects.filter(email=data.get('email')).exists():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1226, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\query.py", line 592, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1366, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1409, in execute_sql
+    val = cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+django.db.utils.DatabaseError
+"POST /api/news/signup/ HTTP/1.1" 500 3816902
+Internal Server Error: /api/news/signup/
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 808, in __iter__
+    yield from iter(self._query)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 167, in __iter__
+    yield self._align_results(doc)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 269, in _align_results
+    if selected.table == self.left_table:
+       ^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 941 more times]
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 130, in table
+    name = self.given_table
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 141, in given_table
+    name = self._token.get_real_name()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 361, in get_real_name
+    return self._get_first_name(dot_idx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 386, in _get_first_name
+    return token.get_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 355, in get_name
+    return self.get_alias() or self.get_real_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 339, in get_alias
+    kw_idx, kw = self.token_next_by(m=(T.Keyword, 'AS'))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 244, in token_next_by
+    return self._token_matching(funcs, idx, end)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 223, in _token_matching
+    if func(token):
+       ^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 242, in <lambda>
+    funcs = lambda tk: imt(tk, i, m, t)
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in imt
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in <genexpr>
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                           ^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 76, in fetchone
+    return self.result.next()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 797, in __next__
+    result = next(self._result_generator)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 830, in __iter__
+    raise exe from e
+djongo.exceptions.SQLDecodeError: 
+
+	Keyword: FAILED SQL: SELECT %(0)s AS "a" FROM "newsapp_user" WHERE "newsapp_user"."email" = %(1)s LIMIT 1
+Params: (1, 'subhitcha.s@gmail.com')
+Version: 1.3.6
+	Sub SQL: None
+	FAILED SQL: None
+	Params: None
+	Version: None
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+djongo.database.DatabaseError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\cit\6th sem\cloudcat\news_backend\newsapp\views.py", line 91, in register_user
+    if User.objects.filter(email=data.get('email')).exists():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1226, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\query.py", line 592, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1366, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1409, in execute_sql
+    val = cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+django.db.utils.DatabaseError
+"POST /api/news/signup/ HTTP/1.1" 500 3816902
+Internal Server Error: /api/news/signup/
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 808, in __iter__
+    yield from iter(self._query)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 167, in __iter__
+    yield self._align_results(doc)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 269, in _align_results
+    if selected.table == self.left_table:
+       ^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 941 more times]
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 130, in table
+    name = self.given_table
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 141, in given_table
+    name = self._token.get_real_name()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 361, in get_real_name
+    return self._get_first_name(dot_idx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 386, in _get_first_name
+    return token.get_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 355, in get_name
+    return self.get_alias() or self.get_real_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 339, in get_alias
+    kw_idx, kw = self.token_next_by(m=(T.Keyword, 'AS'))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 244, in token_next_by
+    return self._token_matching(funcs, idx, end)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 223, in _token_matching
+    if func(token):
+       ^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 242, in <lambda>
+    funcs = lambda tk: imt(tk, i, m, t)
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in imt
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in <genexpr>
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                           ^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 76, in fetchone
+    return self.result.next()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 797, in __next__
+    result = next(self._result_generator)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 830, in __iter__
+    raise exe from e
+djongo.exceptions.SQLDecodeError: 
+
+	Keyword: FAILED SQL: SELECT %(0)s AS "a" FROM "newsapp_user" WHERE "newsapp_user"."email" = %(1)s LIMIT 1
+Params: (1, 'subhitcha.s@gmail.com')
+Version: 1.3.6
+	Sub SQL: None
+	FAILED SQL: None
+	Params: None
+	Version: None
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+djongo.database.DatabaseError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\cit\6th sem\cloudcat\news_backend\newsapp\views.py", line 91, in register_user
+    if User.objects.filter(email=data.get('email')).exists():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1226, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\query.py", line 592, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1366, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1409, in execute_sql
+    val = cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+django.db.utils.DatabaseError
+"POST /api/news/signup/ HTTP/1.1" 500 3816902
+Internal Server Error: /api/news/signup/
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 808, in __iter__
+    yield from iter(self._query)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 167, in __iter__
+    yield self._align_results(doc)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 269, in _align_results
+    if selected.table == self.left_table:
+       ^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 941 more times]
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 130, in table
+    name = self.given_table
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 141, in given_table
+    name = self._token.get_real_name()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 361, in get_real_name
+    return self._get_first_name(dot_idx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 386, in _get_first_name
+    return token.get_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 355, in get_name
+    return self.get_alias() or self.get_real_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 339, in get_alias
+    kw_idx, kw = self.token_next_by(m=(T.Keyword, 'AS'))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 244, in token_next_by
+    return self._token_matching(funcs, idx, end)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 223, in _token_matching
+    if func(token):
+       ^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 242, in <lambda>
+    funcs = lambda tk: imt(tk, i, m, t)
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in imt
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in <genexpr>
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                           ^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 76, in fetchone
+    return self.result.next()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 797, in __next__
+    result = next(self._result_generator)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 830, in __iter__
+    raise exe from e
+djongo.exceptions.SQLDecodeError: 
+
+	Keyword: FAILED SQL: SELECT %(0)s AS "a" FROM "newsapp_user" WHERE "newsapp_user"."email" = %(1)s LIMIT 1
+Params: (1, 'subhitcha.s@gmail.com')
+Version: 1.3.6
+	Sub SQL: None
+	FAILED SQL: None
+	Params: None
+	Version: None
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+djongo.database.DatabaseError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\cit\6th sem\cloudcat\news_backend\newsapp\views.py", line 91, in register_user
+    if User.objects.filter(email=data.get('email')).exists():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1226, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\query.py", line 592, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1366, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1409, in execute_sql
+    val = cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+django.db.utils.DatabaseError
+"POST /api/news/signup/ HTTP/1.1" 500 3816902
+Internal Server Error: /api/news/signup/
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 808, in __iter__
+    yield from iter(self._query)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 167, in __iter__
+    yield self._align_results(doc)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 269, in _align_results
+    if selected.table == self.left_table:
+       ^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 941 more times]
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 130, in table
+    name = self.given_table
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 141, in given_table
+    name = self._token.get_real_name()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 361, in get_real_name
+    return self._get_first_name(dot_idx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 386, in _get_first_name
+    return token.get_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 355, in get_name
+    return self.get_alias() or self.get_real_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 339, in get_alias
+    kw_idx, kw = self.token_next_by(m=(T.Keyword, 'AS'))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 244, in token_next_by
+    return self._token_matching(funcs, idx, end)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 223, in _token_matching
+    if func(token):
+       ^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 242, in <lambda>
+    funcs = lambda tk: imt(tk, i, m, t)
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in imt
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in <genexpr>
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                           ^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 76, in fetchone
+    return self.result.next()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 797, in __next__
+    result = next(self._result_generator)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 830, in __iter__
+    raise exe from e
+djongo.exceptions.SQLDecodeError: 
+
+	Keyword: FAILED SQL: SELECT %(0)s AS "a" FROM "newsapp_user" WHERE "newsapp_user"."email" = %(1)s LIMIT 1
+Params: (1, 'subhitcha.s@gmail.com')
+Version: 1.3.6
+	Sub SQL: None
+	FAILED SQL: None
+	Params: None
+	Version: None
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+djongo.database.DatabaseError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\cit\6th sem\cloudcat\news_backend\newsapp\views.py", line 91, in register_user
+    if User.objects.filter(email=data.get('email')).exists():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1226, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\query.py", line 592, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1366, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1409, in execute_sql
+    val = cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+django.db.utils.DatabaseError
+"POST /api/news/signup/ HTTP/1.1" 500 3816902
+Internal Server Error: /api/news/signup/
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 808, in __iter__
+    yield from iter(self._query)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 167, in __iter__
+    yield self._align_results(doc)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 269, in _align_results
+    if selected.table == self.left_table:
+       ^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 941 more times]
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 130, in table
+    name = self.given_table
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 141, in given_table
+    name = self._token.get_real_name()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 361, in get_real_name
+    return self._get_first_name(dot_idx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 386, in _get_first_name
+    return token.get_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 355, in get_name
+    return self.get_alias() or self.get_real_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 339, in get_alias
+    kw_idx, kw = self.token_next_by(m=(T.Keyword, 'AS'))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 244, in token_next_by
+    return self._token_matching(funcs, idx, end)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 223, in _token_matching
+    if func(token):
+       ^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 242, in <lambda>
+    funcs = lambda tk: imt(tk, i, m, t)
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in imt
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in <genexpr>
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                           ^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 76, in fetchone
+    return self.result.next()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 797, in __next__
+    result = next(self._result_generator)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 830, in __iter__
+    raise exe from e
+djongo.exceptions.SQLDecodeError: 
+
+	Keyword: FAILED SQL: SELECT %(0)s AS "a" FROM "newsapp_user" WHERE "newsapp_user"."email" = %(1)s LIMIT 1
+Params: (1, 'subhitcha.s@gmail.com')
+Version: 1.3.6
+	Sub SQL: None
+	FAILED SQL: None
+	Params: None
+	Version: None
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+djongo.database.DatabaseError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\cit\6th sem\cloudcat\news_backend\newsapp\views.py", line 91, in register_user
+    if User.objects.filter(email=data.get('email')).exists():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1226, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\query.py", line 592, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1366, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1409, in execute_sql
+    val = cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+django.db.utils.DatabaseError
+"POST /api/news/signup/ HTTP/1.1" 500 3816902
+Internal Server Error: /api/news/signup/
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 808, in __iter__
+    yield from iter(self._query)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 167, in __iter__
+    yield self._align_results(doc)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 269, in _align_results
+    if selected.table == self.left_table:
+       ^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 941 more times]
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 130, in table
+    name = self.given_table
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 141, in given_table
+    name = self._token.get_real_name()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 361, in get_real_name
+    return self._get_first_name(dot_idx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 386, in _get_first_name
+    return token.get_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 355, in get_name
+    return self.get_alias() or self.get_real_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 339, in get_alias
+    kw_idx, kw = self.token_next_by(m=(T.Keyword, 'AS'))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 244, in token_next_by
+    return self._token_matching(funcs, idx, end)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 223, in _token_matching
+    if func(token):
+       ^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 242, in <lambda>
+    funcs = lambda tk: imt(tk, i, m, t)
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in imt
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in <genexpr>
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                           ^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 76, in fetchone
+    return self.result.next()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 797, in __next__
+    result = next(self._result_generator)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 830, in __iter__
+    raise exe from e
+djongo.exceptions.SQLDecodeError: 
+
+	Keyword: FAILED SQL: SELECT %(0)s AS "a" FROM "newsapp_user" WHERE "newsapp_user"."email" = %(1)s LIMIT 1
+Params: (1, 'subhitcha.s@gmail.com')
+Version: 1.3.6
+	Sub SQL: None
+	FAILED SQL: None
+	Params: None
+	Version: None
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+djongo.database.DatabaseError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\cit\6th sem\cloudcat\news_backend\newsapp\views.py", line 91, in register_user
+    if User.objects.filter(email=data.get('email')).exists():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1226, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\query.py", line 592, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1366, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1409, in execute_sql
+    val = cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+django.db.utils.DatabaseError
+"POST /api/news/signup/ HTTP/1.1" 500 3816902
+Internal Server Error: /api/news/signup/
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 808, in __iter__
+    yield from iter(self._query)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 167, in __iter__
+    yield self._align_results(doc)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 269, in _align_results
+    if selected.table == self.left_table:
+       ^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 941 more times]
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 130, in table
+    name = self.given_table
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\sql_tokens.py", line 141, in given_table
+    name = self._token.get_real_name()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 361, in get_real_name
+    return self._get_first_name(dot_idx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 386, in _get_first_name
+    return token.get_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 355, in get_name
+    return self.get_alias() or self.get_real_name()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 339, in get_alias
+    kw_idx, kw = self.token_next_by(m=(T.Keyword, 'AS'))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 244, in token_next_by
+    return self._token_matching(funcs, idx, end)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 223, in _token_matching
+    if func(token):
+       ^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\sql.py", line 242, in <lambda>
+    funcs = lambda tk: imt(tk, i, m, t)
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in imt
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\sqlparse\utils.py", line 98, in <genexpr>
+    elif mpatterns and any(token.match(*pattern) for pattern in mpatterns):
+                           ^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 76, in fetchone
+    return self.result.next()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 797, in __next__
+    result = next(self._result_generator)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\sql2mongo\query.py", line 830, in __iter__
+    raise exe from e
+djongo.exceptions.SQLDecodeError: 
+
+	Keyword: FAILED SQL: SELECT %(0)s AS "a" FROM "newsapp_user" WHERE "newsapp_user"."email" = %(1)s LIMIT 1
+Params: (1, 'kavya@gmail.com')
+Version: 1.3.6
+	Sub SQL: None
+	FAILED SQL: None
+	Params: None
+	Version: None
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+djongo.database.DatabaseError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\cit\6th sem\cloudcat\news_backend\newsapp\views.py", line 91, in register_user
+    if User.objects.filter(email=data.get('email')).exists():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1226, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\query.py", line 592, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1366, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1409, in execute_sql
+    val = cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\subhi\AppData\Roaming\Python\Python312\site-packages\djongo\cursor.py", line 81, in fetchone
+    raise db_exe from e
+django.db.utils.DatabaseError
+"POST /api/news/signup/ HTTP/1.1" 500 3816857
