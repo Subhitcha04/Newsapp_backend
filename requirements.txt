@@ -1,0 +1,5 @@
+Django
+djongo
+pymongo
+gunicorn
+djangorestframework
