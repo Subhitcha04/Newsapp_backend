@@ -4,4 +4,3 @@ pymongo
 gunicorn
 djangorestframework
 django-cors-headers
-pip freeze > requirements.txt
