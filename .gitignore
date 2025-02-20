@@ -1,2 +1,7 @@
 # Local Netlify folder
 .netlify
+venv/
+.venv/
+Lib/
+Scripts/
+pyvenv.cfg
