@@ -12,28 +12,25 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
-from disable_migrations import DisableMigrations
+import logging
+from urllib.parse import quote_plus
+from dotenv import load_dotenv
 
-MIGRATION_MODULES = {
-    'newsapp': None,  # Disables migrations for 'newsapp'
-}
+# Load environment variables from .env file
+load_dotenv()
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+# Base directory
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# SECURITY WARNING: Keep the secret key used in production secret!
+SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "your-default-secret-key")
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
+# SECURITY WARNING: Don't run with debug turned on in production!
+DEBUG = os.getenv("DJANGO_DEBUG", "True").lower() == "true"
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-p21d(j(du@87g2#ea+c@+ak^7%jy!km$kquhtkkza)oins_mf6'
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "*").split(",")
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
-
-# Application definition
+# Installed apps
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -46,6 +43,7 @@ INSTALLED_APPS = [
     'newsapp',
 ]
 
+# Middleware
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -57,8 +55,10 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
+# URL Configuration
 ROOT_URLCONF = 'news_backend.urls'
 
+# Templates Configuration
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -75,23 +75,32 @@ TEMPLATES = [
     },
 ]
 
+# WSGI Application
 WSGI_APPLICATION = 'news_backend.wsgi.application'
 
-# Database
-# https://docs.djangoproject.com/en/5.1/ref/settings/#databases
+# MongoDB Configuration
+MONGO_USER = os.getenv("MONGO_USER", "subhitcha")
+MONGO_PASSWORD = quote_plus(os.getenv("MONGO_PASSWORD", "Subhi@090904"))
+MONGO_HOST = os.getenv("MONGO_HOST", "newsapp.vmar8.mongodb.net")
+MONGO_DB = os.getenv("MONGO_DB", "newsapp")
+
+MONGO_URI = f"mongodb+srv://{MONGO_USER}:{MONGO_PASSWORD}@{MONGO_HOST}/{MONGO_DB}?retryWrites=true&w=majority"
+
+# Database Configuration
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'news_app',
-        'ENFORCE_SCHEMA': False,  
+        'ENGINE': 'djongo',  # Ensure compatibility with Django version
+        'NAME': MONGO_DB,
+        'ENFORCE_SCHEMA': False,
         'CLIENT': {
-            'host': 'mongodb://localhost:27017/'
+            'host': MONGO_URI,
+            'authSource': 'admin',
+            'authMechanism': 'SCRAM-SHA-1',
         }
     }
 }
 
-# Password validation
-# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
+# Password Validation
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
     {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator'},
@@ -100,28 +109,27 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # Internationalization
-# https://docs.djangoproject.com/en/5.1/topics/i18n/
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
 USE_TZ = False
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.1/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+# Static files configuration
 STATIC_URL = "/static/"
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
+# Media files (For handling uploads)
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
 # Default primary key field type
-# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Logging Configuration
 LOG_DIR = os.path.join(BASE_DIR, 'logs')
-os.makedirs(LOG_DIR, exist_ok=True)  # Ensure logs directory exists
+if not os.path.exists(LOG_DIR):
+    os.makedirs(LOG_DIR)
 
 LOGGING = {
     'version': 1,
@@ -142,15 +150,8 @@ LOGGING = {
     },
 }
 
+# CORS Configuration
 CORS_ALLOW_ALL_ORIGINS = True  # Allows all frontends
 CORS_ALLOW_CREDENTIALS = True  # Allows cookies, sessions, JWTs, etc.
-CORS_ALLOW_METHODS = [
-    "GET",
-    "POST",
-    "PUT",
-    "PATCH",
-    "DELETE",
-    "OPTIONS"
-]  # Allows all common HTTP methods
+CORS_ALLOW_METHODS = ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]  # Common HTTP methods
 CORS_ALLOW_HEADERS = ["*"]  # Allows all headers (e.g., Authorization, Content-Type)
-

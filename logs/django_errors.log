@@ -2833,3 +2833,11 @@ Traceback (most recent call last):
     raise db_exe from e
 django.db.utils.DatabaseError
 "POST /admin/login/?next=/admin/ HTTP/1.1" 500 278477
+"GET /admin/ HTTP/1.1" 500 59
+"POST /admin/login/?next=/admin/ HTTP/1.1" 500 59
+"POST /admin/login/?next=/admin/ HTTP/1.1" 500 59
+"GET /admin/ HTTP/1.1" 500 59
+"GET /admin/newsapp/newsarticle/ HTTP/1.1" 500 59
+"GET /admin/jsi18n/ HTTP/1.1" 500 59
+"GET /admin/newsapp/reaction/ HTTP/1.1" 500 59
+"GET /admin/jsi18n/ HTTP/1.1" 500 59
