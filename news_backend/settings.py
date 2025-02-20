@@ -20,7 +20,11 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "your-default-secret-key")
 DEBUG = os.getenv("DJANGO_DEBUG", "True").lower() == "true"
 
 # Allowed Hosts
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "localhost,127.0.0.1").split(",")
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "newsapp-backend-1-qsus.onrender.com"
+] + os.getenv("ALLOWED_HOSTS", "").split(",")
 
 # Installed apps
 INSTALLED_APPS = [
@@ -39,12 +43,14 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',  # Moved up for correct execution order
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+
 ]
 
 # Root URL Configuration
@@ -154,4 +160,6 @@ CORS_ALLOW_HEADERS = ["*"]
 if DEBUG:
     CORS_ALLOW_ALL_ORIGINS = True
 else:
-    CORS_ALLOWED_ORIGINS = os.getenv("CORS_ALLOWED_ORIGINS", "http://localhost,http://127.0.0.1").split(",")
+    CORS_ALLOWED_ORIGINS = [
+        "https://newsapp-backend-1-qsus.onrender.com"
+    ] + os.getenv("CORS_ALLOWED_ORIGINS", "").split(",")
