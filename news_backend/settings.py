@@ -23,12 +23,13 @@ load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: Keep the secret key used in production secret!
-SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "your-default-secret-key")
+SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: Don't run with debug turned on in production!
 DEBUG = os.getenv("DJANGO_DEBUG", "True").lower() == "true"
 
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "*").split(",")
+# Allowed Hosts
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(",")
 
 # Installed apps
 INSTALLED_APPS = [
@@ -78,11 +79,11 @@ TEMPLATES = [
 # WSGI Application
 WSGI_APPLICATION = 'news_backend.wsgi.application'
 
-# MongoDB Configuration
-MONGO_USER = os.getenv("MONGO_USER", "subhitcha")
-MONGO_PASSWORD = quote_plus(os.getenv("MONGO_PASSWORD", "Subhi@090904"))
-MONGO_HOST = os.getenv("MONGO_HOST", "newsapp.vmar8.mongodb.net")
-MONGO_DB = os.getenv("MONGO_DB", "newsapp")
+# MongoDB Configuration (from .env)
+MONGO_USER = os.getenv("MONGO_USER")
+MONGO_PASSWORD = quote_plus(os.getenv("MONGO_PASSWORD"))
+MONGO_HOST = os.getenv("MONGO_HOST")
+MONGO_DB = os.getenv("MONGO_DB")
 
 MONGO_URI = f"mongodb+srv://{MONGO_USER}:{MONGO_PASSWORD}@{MONGO_HOST}/{MONGO_DB}?retryWrites=true&w=majority"
 
@@ -151,7 +152,11 @@ LOGGING = {
 }
 
 # CORS Configuration
-CORS_ALLOW_ALL_ORIGINS = True  # Allows all frontends
-CORS_ALLOW_CREDENTIALS = True  # Allows cookies, sessions, JWTs, etc.
-CORS_ALLOW_METHODS = ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]  # Common HTTP methods
-CORS_ALLOW_HEADERS = ["*"]  # Allows all headers (e.g., Authorization, Content-Type)
+if DEBUG:
+    CORS_ALLOW_ALL_ORIGINS = True
+else:
+    CORS_ALLOWED_ORIGINS = os.getenv("CORS_ALLOWED_ORIGINS", "").split(",")
+
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_METHODS = ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
+CORS_ALLOW_HEADERS = ["*"]
